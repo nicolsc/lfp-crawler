@@ -1,0 +1,23 @@
+{
+  "name": "lfp-crawler",
+  "version": "0.0.0",
+  "private": true,
+  "engines": {
+      "iojs" : "1.6.2"
+  },
+  "scripts": {
+    "postinstall" : "node postinstall.js",
+    "start": "DEBUG=* node --harmony --use_strict ./scripts/crawl.js 79077"
+  },
+  "dependencies": {
+    "body-parser": "~1.10.2",
+    "cookie-parser": "~1.3.3",
+    "debug": "~2.1.1",
+    "express": "~4.11.1",
+    "jade": "~1.9.1",
+    "jsdom": "4.0.x",
+    "morgan": "~1.5.1",
+    "pg": "4.3.x",
+    "serve-favicon": "~2.2.0"
+  }
+}
